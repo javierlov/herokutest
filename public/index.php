@@ -14,7 +14,7 @@ $app->get('/', function (Request $request, Response $response, $args) {
 });
 
 $app->get('/hello/{name}', function ($request, $response, array $args) {
-    $response->getBody()->write("Saludos, " . $args['name']);
+    $response->getBody()->write("Esto no funciona, " . $args['name']);
     return $response;
 })->setName('hello');
 
